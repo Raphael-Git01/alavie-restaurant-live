@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
+
 
 export default function Reservation() {
   const [formData, setFormData] = useState({
@@ -14,7 +15,7 @@ export default function Reservation() {
   });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // In production, this would send data to a database or restaurant email
     setSubmitted(true);

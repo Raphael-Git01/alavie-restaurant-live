@@ -49,6 +49,7 @@ export default function About() {
               <p className="text-stone-200 font-medium">A La Vie Restaurant</p>
               <p>Blohum Road, Airport West</p>
               <p>Accra, Ghana</p>
+              <p>Call us on: <a  href="tel:+233249988315" className="text-amber-500 underline">+233 249 988 315</a></p>
               <div className="pt-3">
                 <span className="text-[10px] text-amber-500 uppercase font-semibold tracking-wider bg-amber-500/5 border border-amber-500/20 px-2 py-1 rounded">
                   Get Directions
