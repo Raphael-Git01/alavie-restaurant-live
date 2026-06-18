@@ -13,7 +13,7 @@ function About() {
         </p>
         <div className="text-sm text-stone-500">
           <p>Address: Blohum Road, Accra</p>
-          <p>Hours: Mon–Sun, 10:00 AM – 11:00 PM</p>
+          <p>Hours: Mon - Sun, 10:00 AM - 11:00 PM</p>
         </div>
       </div>
     </section>
@@ -72,16 +72,20 @@ export default function Home() {
             className="object-cover opacity-80 contrast-105"
             sizes="(max-w-7xl) 100vw, 50vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-stone-950 via-transparent to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-l from-stone-950 to-transparent pointer-events-none" />
         </div>
-      </main>
+     </main>
 
       {/* MENU SECTION */}
       <Menu />
+
+      {/* RESERVATION SECTION */}
       <Reservation />
 
       {/* ABOUT & LOCATION SSECTION */}
-      <About /> {/* <-- 2. Render it under the menu */}
+      <About /> 
+       
     </>
+
   );
 }
