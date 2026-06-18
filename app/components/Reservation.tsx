@@ -66,7 +66,7 @@ export default function Reservation() {
              />
 
              <button type="submit" className="w-full py-3 bg-amber-500 text-stone-950 font-bold rounmded">
-               Confirm Reservation
+               Confirm Request/Feedback
               </button>"
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
