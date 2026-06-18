@@ -54,6 +54,21 @@ export default function Reservation() {
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="bg-stone-900/20 border border-stone-800/60 rounded-xl p-6 md:p-10 space-y-6">
+            <input type="text"
+              placeholder="Your Name"
+              className="w-full p-3 bg-stone-900 border-stone-800 rounded text-white" required />
+              <input type="email" placeholder="Special Requests or Feedback?
+               " className="w-full p-3 bg-stone-900 border-stone-800 rounded text-white" />
+           
+            <textarea
+              placeholder="Special Requests or Feedback?"
+              className="w-full p-3 bg-stone-900 border-stone-800 rounded text-white h-24"
+             />
+
+             <button type="submit" className="w-full py-3 bg-amber-500 text-stone-950 font-bold rounmded">
+               Confirm Reservation
+              </button>"
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
              
               {/* Full Name */}
