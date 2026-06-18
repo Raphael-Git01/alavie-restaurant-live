@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navbar from "./components/navbar";
 import Menu from "./components/menu";
+import Reservation from "./components/Reservation"; 
 
 function About() {
   return (
@@ -77,6 +78,7 @@ export default function Home() {
 
       {/* MENU SECTION */}
       <Menu />
+      <Reservation />
 
       {/* ABOUT & LOCATION SSECTION */}
       <About /> {/* <-- 2. Render it under the menu */}
