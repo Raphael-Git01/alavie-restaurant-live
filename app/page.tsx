@@ -1,5 +1,6 @@
 import Navbar from "./components/navbar";
 import Menu from "./components/menu"; // Ensure file is named Menu.tsx
+import Gallery from "./components/Gallery";
 import Reservation from "./components/Reservation"; // Ensure file is named Reservation.tsx
 import About from "./components/About"; // Ensure file is named About.tsx
 // import Gallery from "./components/Gallery"; // Uncomment this if you added the gallery
@@ -23,8 +24,8 @@ export default function Home() {
         <Menu />
       </section>
 
-      {/* 4. Gallery Section (If you added it) */}
-      {/* <Gallery /> */}
+      {/* 3. Atmosphere Gallery */}
+      <Gallery />
 
       {/* 5. Reservation & Feedback Section */}
       <section id="reservations">
