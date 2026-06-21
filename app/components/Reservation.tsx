@@ -31,6 +31,8 @@ export default function Reservation() {
           <form className="space-y-4">
             <input type="text" placeholder="Your Name" className="w-full p-3 bg-stone-900 border border-stone-800 rounded text-white" required />
             <input type="email" placeholder="Your Email" className="w-full p-3 bg-stone-900 border border-stone-800 rounded text-white" required />
+            {/* Added Phone Number Input */}
+            <input type="tel" placeholder="Phone Number" className="w-full p-3 bg-stone-900 border border-stone-800 rounded text-white" required />
             <input type="date" className="w-full p-3 bg-stone-900 border border-stone-800 rounded text-white" required />
             <button type="submit" className="w-full py-4 bg-amber-500 hover:bg-amber-400 text-stone-950 font-bold rounded transition-all uppercase tracking-widest">
               Confirm Reservation
