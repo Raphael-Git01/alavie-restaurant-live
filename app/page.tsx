@@ -1,22 +1,38 @@
 import Navbar from "./components/navbar";
-import Menu from "./components/menu"; // Ensure file is named Menu.tsx
+import Menu from "./components/menu";
 import Gallery from "./components/Gallery";
-import Reservation from "./components/Reservation"; // Ensure file is named Reservation.tsx
-import About from "./components/About"; // Ensure file is named About.tsx
-// import Gallery from "./components/Gallery"; // Uncomment this if you added the gallery
+import Reservation from "./components/Reservation";
+import About from "./components/About";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-stone-950 text-white">
-      {/* 1. Navigation */}
+      {/* Navigation */}
       <Navbar />
 
-      {/* 2. Hero Section */}
-      <section id="hero" className="relative flex min-h-screen flex-col items-center justify-center p-6 text-center">
-        <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6">A La Vie Restaurant</h1>
-        <p className="text-stone-400 text-lg max-w-lg">
-          Experience the finest flavors in the heart of Accra.
-        </p>
+      {/* Hero Section with Background */}
+      <section 
+        id="hero" 
+        className="relative flex min-h-screen flex-col items-center justify-center p-6 text-center"
+        style={{
+          backgroundImage: "url('/images/herobg.png')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-black/50 z-0"></div>
+
+        {/* Content */}
+        <div className="relative z-10">
+          <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6">
+            A La Vie
+          </h1>
+          <p className="text-stone-200 text-lg max-w-lg">
+            Experience the finest flavors in the heart of Accra.
+          </p>
+        </div>
       </section>
 
       {/* 3. Menu Section */}
@@ -39,3 +55,6 @@ export default function Home() {
     </main>
   );
 }
+      
+    
+  
