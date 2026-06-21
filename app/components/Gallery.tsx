@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export default function Gallery() {
   const images = [
-    { src: "/images/entrance.jpg", alt: "Restaurant Entrance" },
-    { src: "/images/interior.jpg", alt: "Dining Interior" },
-    { src: "/images/bartender.jpg", alt: "Bartender preparing drinks" },
-    { src: "/images/dining.jpg", alt: "Dining area setting" },
-  ];
+  { src: "/images/entrance.png", alt: "Restaurant Entrance" },
+  { src: "/images/interior.png", alt: "Dining Interior" },
+  { src: "/images/bartender.png", alt: "Bartender preparing drinks" },
+  { src: "/images/dining.png", alt: "Dining area setting" },
+];
 
   return (
     <section id="gallery" className="py-20 bg-stone-950">
