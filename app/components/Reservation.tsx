@@ -8,12 +8,8 @@ export default function Reservation() {
   const [date, setDate] = useState("");
 
   return (
-    // Add id="reservations" right here:
-    <section id="reservations" className="py-20 bg-stone-900">
-      {/* ... your form code ... */}
-    </section>
-  );
-}
+    <section id="reservations" className="py-20 bg-stone-950 text-white">
+      <div className="max-w-2xl mx-auto px-6">
         
         {/* SECTION 1: FEEDBACK */}
         <div className="mb-20">
@@ -43,3 +39,8 @@ export default function Reservation() {
             </button>
           </form>
         </div>
+
+      </div>
+    </section>
+  );
+}

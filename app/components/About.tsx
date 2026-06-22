@@ -9,7 +9,7 @@ export default function About() {
             Our Story
           </span>
           <h2 className="text-4xl font-serif font-bold text-stone-100">
-            A Sanctuagry of Elegance
+            A Sanctuary of Elegance
           </h2>
           <div className="w-12 h-[1px] bg-amber-500"></div>
           <p className="text-stone-400 text-sm md:text-base leading-relaxed font-light">
